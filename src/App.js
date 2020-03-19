@@ -57,7 +57,7 @@ class App extends Component {
 
   currentWeather = async (lat, lon) => {
     const api = "fb99a9091d0767ca14020c008ceef687"
-    let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&apiKey=${api}&units=metric`
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&apiKey=${api}&units=metric`
     let data = await fetch(url)
     let result = await data.json();
 
